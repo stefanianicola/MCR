@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCR - Movimiento Cultural Rionegrino</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid p-0 m-0">
+  <header class="s-header">
+    <a class="logo" href="#">
+      <img src="./img/logo-1.png" width="200px" alt="">
+    </a>
+  </header>
+
+  <main>
+    <section class="nosotros img_bg parallax row m-0 p-0 d-flex flex-column">
+      <div class="col-12 col-md-7 col-lg-6 col-xl-5 description ">
+        <h2>¿Qué <br> es el MCR?</h2>
+        <div class="content-parag">
+          <p class="m-0">Somos un movimiento que surge para crecer y superar obstáculos.</p>
+          <p>Buscamos acompañar a todxs lxs actorxs culturales de la provincia, trabajar juntxs y difundir el
+            trabajo de artistxs de la región para generar lazos y ampliar horizontes.</p>
+          <p>Queremos conocer y difundir los proyectos locales, por eso lxs invitamos a completar la ficha de
+            inscripción para conformar entre todxs un catálogo online de las obras y lxs artistas de todo Río Negro.</p>
+        </div>
+
+      </div>
+      <a href="#inscripcion" class="col-10 col-md-6 col-xl-5 smoothscroll">¡Formá parte del Movimiento Cultural
+        Rionegrino!</a>
+    </section>
+    <section class="slide">
+      <div class="container-fluid text-center p-0">
+        <div class="row mx-auto my-auto p-0">
+          <div id="entradasCarousel" class="carousel slide w-100 p-0" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="row carousel-item carousel-item-marcas active p-0 m-0" data-interval="1000">
+               <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0"
+                    src="img/slide/artesania.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+                <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0"
+                    src="img/slide/audiovisual.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+                <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0" src="img/slide/danza.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+                <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0"
+                    src="img/slide/escenicas.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+                <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0"
+                    src="img/slide/espacios.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+               <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0"
+                    src="img/slide/festivales.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+                <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0" src="img/slide/LETRAS.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+              <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0" src="img/slide/musica.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+               <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0" src="img/slide/tecno.jpg">
+              </div>
+              <div class="carousel-item carousel-item-marcas" data-interval="2000">
+               <img class="d-block float-left  col-3 col-xl-2 img-fluid p-0"
+                    src="img/slide/visuales.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSCRIPCIÓN
+   ================================================== -->
+    <section id="inscripcion" class="wrapper-form img-bg2 parallax">
+    
+      <div class="row m-0 p-0">
+        <div class="formulario col-12 col-md-6">
+          <div class="col-12 p-0 m-0">
+            <h2 class="title-form m-0">
+              Convocatoria 2021
+            </h2>
+          </div>
+          <form id="formObra" method="POST" action="contact/contact.php">
+            <h4 class="subhead">SUMATE CON TU PROYECTO</h4>
+            <!-- Comienzo PASO 1 -->
+            <div class="item-formulario">
+              <span class="label-form text-form">Nombre y apellido</span>
+              <input class="col-12" type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido" id="nombre"
+                required>
+            </div>
+            <div class="item-formulario">
+              <span class="label-form text-form">Título/Ocupación</span>
+              <input class="col-12" type="text" name="Título/Ocupación" placeholder="Título/Ocupación" id="ocupacion"
+                required>
+            </div>
+            <div class="item-formulario">
+              <span class="label-form text-form">Lugar de residencia</span>
+              <input class="col-12" type="text" name="Lugar de residencia" placeholder="Lugar de residencia"
+                id="direccion-personal" required>
+            </div>
+            <div class="item-formulario">
+              <span class="label-form text-form">Email</span>
+              <input class="col-12" type="email" name="Email" placeholder="Email" id="email" required>
+            </div>
+            <div class="item-formulario">
+              <span class="label-form text-form">Teléfono</span>
+              <input class="col-12" type="tel" name="Teléfono" placeholder="Teléfono" id="telefono" required>
+            </div>
+            <div class="item-formulario">
+              <span class="label-form text-form">Foto de perfil (la imagen no debe superar los 2 MB)</span>
+              <div class="file-upload-wrapper" data-text="Foto de perfil">
+                <input name="foto_perfil" type="file" class="file-upload-field" value="foto-perfil">
+              </div>
+            </div>
+            <div class="item-formulario">
+              <textarea class="col-12" name="Breve reseña personal" placeholder="Breve reseña personal"
+                id="sinopsis"></textarea>
+            </div>
+            <div class="item-formulario">
+              <label for="categoria" style="display: none;">Especialidad artística</label>
+              <span class="label-form text-form">Especialidad artística</span>
+              <div class="cl-custom-select">
+                <select class="col-12" name="Especialidad" id="categoria" required>
+                  <option value="#">Elegir especialidad artística</option>
+                  <option value="1-Artes escénicas">Artes escénicas</option>
+                  <option value="2-Audiovisuales">Audiovisuales</option>
+                  <option value="3-Danza">Danza</option>
+                  <option value="4-Música">Música</option>
+                  <option value="5-Artesanías">Artesanías</option>
+                  <option value="6-Artes visuales">Artes visuales</option>
+                  <option value="7-Letras">Letras</option>
+                  <option value="8-Tecnología">Tecnología</option>
+                  <option value="9-Festivales">Festivales</option>
+                  <option value="10-Espacios Culturales">Espacios Culturales</option>
+                </select>
+              </div>
+            </div>
+            <!-- <div class="item-formulario">
+              <span class="label-form text-form">Título original</span>
+              <input class="col-12" type="text" name="Título" placeholder="Título Original" id="titulo" required>
+            </div> -->
+            <div class="elements-to-show" showin="[2]">
+              <label for="audiovisual" style="display: none;">Tipo</label>
+              <div class="cl-custom-select">
+                <select class="col-12" name="Tipo Audiovisual" id="audiovisual">
+                  <option value="">Tipo</option>
+                  <option value="Cine">Cine</option>
+                  <option value="Televisión">Televisión</option>
+                  <option value="Animación">Animación</option>
+                </select>
+              </div>
+            </div>
+            <div class="elements-to-show" showin="[4]">
+              <label for="musica" style="display: none;">Tipo</label>
+              <div class="cl-custom-select">
+                <select class="col-12" name="Tipo Música" id="musica">
+                  <option value="">Tipo</option>
+                  <option value="Dúo">Dúo</option>
+                  <option value="Solista">Solista</option>
+                  <option value="Grupo">Grupo</option>
+                  <option value="Coro">Coro</option>
+                </select>
+              </div>
+            </div>
+            <div class="elements-to-show" showin="[6]">
+              <label for="visual" style="display: none;">Tipo</label>
+              <div class="cl-custom-select">
+                <select class="col-12" name="Tipo Visual" id="visual">
+                  <option value="">Tipo</option>
+                  <option value="Pintura">Pintura</option>
+                  <option value="Dibujo">Dibujo</option>
+                  <option value="Grabado">Grabado</option>
+                  <option value="Escultura">Escultura</option>
+                  <option value="Fotografía">Fotografía</option>
+                  <option value="Performance">Performance</option>
+                  <option value="Técnicas mixtas">Técnicas mixtas</option>
+                  <option value="Collage">Collage</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="elements-to-show item-formulario" showin="[3]">
+              <span class="label-form text-form">Estilo</span>
+              <input class="col-12" type="text" name="Estilo" placeholder="Estilo" id="estilo">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[1,3]">
+              <span class="label-form text-form">Nombre de la obra</span>
+              <input class="col-12" type="text" name="Nombre de la Obra" placeholder="Nombre de la obra"
+                id="nombre-obra">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[2]">
+              <span class="label-form text-form">Nombre del proyecto</span>
+              <input class="col-12" type="text" name="Nombre del Proyecto" placeholder="Nombre del proyecto"
+                id="titulo-proyecto">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[4]">
+              <span class="label-form text-form">Nombre artistico</span>
+              <input class="col-12" type="text" name="Nombre artistico" placeholder="Nombre artistico"
+                id="nombre-artistico">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[5]">
+              <span class="label-form text-form">Nombre del emprendimiento</span>
+              <input class="col-12" type="text" name="Nombre del emprendimiento" placeholder="Nombre del emprendimiento"
+                id="nombre-emprendimiento">
+            </div>
+            <div class="elements-to-show" showin="[1,2]">
+            <label for="genero" style="display: none;">Género</label>
+            <div class="cl-custom-select">
+              <select class="col-12" name="Género" id="genero">
+                <option  value="#">Género</option>
+                <option value="Ficcion">Ficción</option>
+                <option value="Documental">Documental</option>
+                <option value="Animacion">Animación</option>
+                <option value="Experimental">Experimental</option>
+              </select>
+            </div>
+          </div>
+            <div class="elements-to-show item-formulario" showin="[1,2]">
+              <span class="label-form text-form">Link del Trailer</span>
+              <input class="col-12" type="url" name="Link del Trailer" placeholder="Link del Trailer" id="trailer">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[1,2]">
+              <span class="label-form text-form">Duración</span>
+              <input class="col-12" type="text" name="Duración" placeholder="00:00:00" id="duracion">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[5]">
+              <span class="label-form text-form">Producto</span>
+              <input class="col-12" type="text" name="producto" placeholder="Producto" id="producto">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[5,6]">
+              <span class="label-form text-form">Descripción</span>
+              <input class="col-12" type="text" name="Descripción" placeholder="Descripción" id="descripcion">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[1,2,3,4,5]">
+              <span class="label-form text-form">Año de realización</span>
+              <input class="col-12" type="text" name="Año de realización" placeholder="Año de realización" id="anio">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[1,2,3]">
+              <span class="label-form text-form">Participantes/Actores</span>
+              <input class="col-12" type="text" name="Elenco" placeholder="Participantes/Actores" id="elenco">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[4]">
+              <span class="label-form text-form">Integrantes</span>
+              <input class="col-12" type="text" name="Integrantes" placeholder="Integrantes" id="integrantes">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[5]">
+              <span class="label-form text-form">Puntos de venta</span>
+              <input class="col-12" type="text" name="Puntos de venta" placeholder="Puntos de venta" id="ventas">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[1,2,3,4]">
+              <span class="label-form text-form">Link de visualización</span>
+              <input class="col-12" type="url" name="Link del Visionado/Descarga" placeholder="Link de visualización"
+                id="link-pelicula">
+            </div>
+            <div class="elements-to-show item-formulario" showin="[1,2,3,4,5,6]">
+              <span class="label-form text-form">Foto descriptiva (la imagen no debe superar los 2 MB)</span>
+              <div class="file-upload-wrapper" data-text="Foto descriptiva">
+                <input name="imagen_obra" type="file" class="file-upload-field" value="fotograma">
+              </div>
+            </div>
+            <label class="add-bottom">
+            <input class="check" type="checkbox" name="accept-bases" required>
+            <span class="label-text">He leído y estoy de acuerdo con las <a href="bases.html">Bases y Condiciones</a> de
+              participación.</span>
+          </label>
+            <button class="btn col-12 sendForm" id="btn_enviar" type="submit"> <i id="loading"
+                class="fa fa-sync fa-spin" style="display: none"></i> <span>Enviar</span></button>
+            <label id="status_msg" class="subscribe-message"></label>
+          </form>
+          <span class="text-form">* Una vez enviado el formulario recibirás una copia con la inscripción en tu email
+            (puede que llegue como spam).
+           </span>
+           <br>
+           <span class="text-form">* Queda a criterio del Comité Evaluador del MCR la posterior publicación de las obras recibidas.
+           </span>
+        </div>
+      </div> <!-- end row -->
+    </section> <!-- end s-about -->
+  </main>
+
+  <footer class="wrapper-footer">
+    <div class="foot">
+      <div class="redes row m-0 p-0">
+        <a href="https://www.facebook.com/search/top/?q=movimiento%20cultural%20rionegrino" class="col-12 col-md-4">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          /movimientoculturalrionegrino
+        </a>
+        <a href="https://www.instagram.com/movimientoculturalrionegrino/" class="col-12 col-md-4">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          /movimientoculturalrionegrino
+        </a>
+      </div>
+      <a href="https://api.whatsapp.com/send?phone=5491133984737" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+      </a>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

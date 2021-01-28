@@ -1,0 +1,23 @@
+.s-header {
+    margin-top: 20px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    text-align: center;
+    @include respond-to(medium) {
+        text-align: left;
+    }
+    .logo {
+        padding: 50px;
+        img {
+            width: 170px;
+            @include respond-to(medium) {
+                width: 200px;
+                margin-left: 70px;
+            }
+        }
+    }
+}

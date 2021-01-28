@@ -1,0 +1,26 @@
+@mixin respond-to($breakpoint:'1px') {
+    @if $breakpoint == "small" { // for Smartphone
+        @media all and (min-width: $competitive-sm) { // 576
+          @content;
+        }
+      }
+
+    @else if $breakpoint == "medium" { // for Tablet Portrait
+      @media all and (min-width: $competitive-md) { // 768
+        @content;
+      }
+    }
+  
+    @else if $breakpoint == "normal" { // For Tablet landscape and Small Desktop
+      @media all and (min-width: $competitive-lg) { // 992
+        @content;
+      }
+    }
+  
+    @else if $breakpoint == "large" { // For desktop
+      @media all and (min-width: $competitive-el) { // 1025
+        @content;
+      }
+    }
+  
+  }

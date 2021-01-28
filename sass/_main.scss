@@ -1,0 +1,115 @@
+.nosotros {
+    padding: 70px 0;
+    position: relative;
+    @include respond-to(medium) {
+        padding: 90px 0;
+    }
+    &.img_bg {
+        //VER COMO PREFIERON EN MOBILE
+        background-color: #fff;
+        @include respond-to(medium) {
+        background-image: url(../img/Bg-01.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        }
+    }
+    .description {
+        padding: 50px 50px 0 50px;
+        margin-top: 40px;
+        @include respond-to(medium) {
+            padding: 50px;
+            margin-left: 70px;
+        }
+        h2 {
+            color: #ed145a;
+            font-weight: 900;
+            font-size: 40px;
+            margin: 40px 0;
+            @include respond-to(medium) {
+                font-size: 60px;
+            }
+        }
+        .content-parag {
+            //background-color: #fff;
+            p {
+                font-weight: 300;
+                line-height: 25px;
+            }
+        }
+        p {
+            font-weight: 300;
+            line-height: 25px;
+            //background-color: #fff;
+        }
+    }
+    a {
+        color: #ed145a;
+        text-decoration: none;
+        border: 2px solid #ed145a;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: 800;
+        margin: 30px auto;
+        background-color: #fff;
+        &:hover {
+            color: #00688f;
+            border: 2px solid #00688f;
+        }
+        @include respond-to(medium) {
+            margin: 50px 0 50px 110px;
+        }
+        @include respond-to(normal) {
+            margin-bottom: 150px;
+            margin-left: 110px;
+        }
+    
+    }
+}
+.slide {
+    .carousel-inner {
+        .carousel-item-right.active,
+        .carousel-item-next {
+            transform: translateX(33.3%); // en tablet para arriba cambia a 16.66%
+            @include respond-to(medium) {
+                transform: translateX(16.66%);
+            }
+        }
+        .carousel-item-left.active,
+        .carousel-item-prev {
+            transform: translateX(-33.3%); // en tablet para arriba cambia a 16.66%
+            @include respond-to(medium) {
+                transform: translateX(-16.66%);
+            }
+        }
+        .carousel-item-right,
+        .carousel-item-left {
+            transform: translateX(0);
+        }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 15%;
+        text-align: center;
+        opacity: 0.5;
+        transition: opacity 0.1s ease;
+        &.carousel-control-prev {
+            left: 0;
+        }
+        &.carousel-control-next {
+            right: 0;
+        }
+    }
+}
